@@ -1,0 +1,158 @@
+{
+    "ad": "{\"adList\":{\"IsNeedTime\":\"0\",\"has_scene_info\":\"0\",\"item\":[{\"order_id\":\"4048264\",\"type\":\"LD\",\"display_code\":\"\",\"cover_id\":\"\",\"url\":\"http://bla.gtimg.com/qqlive/201804/BRDS_20180402144147328.mp4\",\"urlsmall\":\"http://bla.gtimg.com/qqlive/201804/BRDS_20180402144147328.mp4\",\"duration\":\"15000\",\"ReportTime\":\"0\",\"no_click\":\"N\",\"inner_jump\":\"N\",\"link\":\"http://imc.l.qq.com/click?oid=4048264&cid=2709266&adtype=LD&refluence=4006&requestl=4006&soid=zg6LdaIAWtUNwQsmfADFKE9VAZMm&aver=0&ev=6.0.352.352&aver_flag=6148&traffic=&tagid=&si=341225226&target=4006&isfloatindex=0&pf=in&loc=LV_1001_LDVi_LD&vptag=%7Crec-populartoday%3Atitle&click_data=dXNlcl9pbmZvPXZRRGpnVGctRVJHNSZ1cF92ZXJzaW9uPVY2LjAuMzUyLjM1MiZsdnByaT0xNDQwJmJldGE9LTEuMDAwMDAw&chid=0&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=4048264&cid=2709266&adtype=LD&mt=15000&refluence=4006&requestl=4006&soid=zg6LdaIAWtUNwQsmfADFKE9VAZMm&aver=0&ev=6.0.352.352&aver_flag=6148&traffic=&tagid=&si=341225226&l=4006&isfloatindex=0&chid=0&acpm=2&imagelog=1&imagemd5=2442d3147f2510124d567847dda0d3b6&iptype=0&cip=117.139.14.206&isthirdip=0&fl=1&gf=2&ip_filter=1&ufc_filter=0&urlchid=0&use_axp=1&axpheader=1&use_txp=1&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXNlcl9pbmZvPXZRRGpnVGctRVJHNSZ1cF92ZXJzaW9uPVY2LjAuMzUyLjM1MiZsdnByaT0xNDQwJmJldGE9LTEuMDAwMDAw&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"params\":\"oid=4048264&loc=LV_1001_LDVi_LD&orderfile=http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2F&vid=&get_type=1&c_type=0&button_name=Come+On!&richdata=%7B%22loc%22%3A%22LV_1001_LDVi_LD%22%2C%22oid%22%3A%224048264%22%2C%22orderfile%22%3A%22http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2F%22%2C%22plugins%22%3A%7B%22click_text_desc%22%3A%22%22%2C%22safeInterface%22%3A%22N%22%2C%22trueview%22%3A%22Y%22%7D%2C%22vid%22%3A%22%22%7D\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"http://183.222.96.19/vlive.qqvideo.tc.qq.com/APRWHy4T1MF0u3df4qYacqx_OYZI2Cs3ayg8LpNbTt70/c0200cqvsv1.p201.1.mp4?vkey=329F3C01B20C60F2D371D438E4042460AF1CBDFF169EE218DB60101F9CA3EE3DC57252DBD3242967EDBB0CE7C19BC2C4757AD02107D7B3D93D47E52E5296185D75CD9801D336DBB79E67360A2D40F036886CA7277C9486AD02EF9842F625F3049DAD056AACE033FED44EE99797FED501C527960B1D38E3F7&platform=10201&sdtfrom=&fmt=shd&level=0\",\"md5\":\"dc12994144871c2a1d59b847ba73ca66\",\"cs\":\"2510932\",\"ds\":\"15\",\"width\":\"640\",\"height\":\"360\",\"vid\":\"c0200cqvsv1\"},{\"index\":\"1\",\"url\":\"http://183.222.96.19/vlive.qqvideo.tc.qq.com/APRWHy4T1MF0u3df4qYacqx_OYZI2Cs3ayg8LpNbTt70/c0200cqvsv1.p201.1.mp4?vkey=329F3C01B20C60F2D371D438E4042460AF1CBDFF169EE218DB60101F9CA3EE3DC57252DBD3242967EDBB0CE7C19BC2C4757AD02107D7B3D93D47E52E5296185D75CD9801D336DBB79E67360A2D40F036886CA7277C9486AD02EF9842F625F3049DAD056AACE033FED44EE99797FED501C527960B1D38E3F7&platform=10201&sdtfrom=&fmt=shd&level=0\",\"md5\":\"dc12994144871c2a1d59b847ba73ca66\",\"cs\":\"2510932\",\"ds\":\"15\",\"width\":\"640\",\"height\":\"360\",\"vid\":\"c0200cqvsv1\"}],\"reportUrlOther\":{\"reportitem\":[{\"url\":\"http://cm.l.qq.com/?Bid=f4d5696444ef1184acc67176ebe9026c\",\"reporttime\":\"0\"},{\"url\":\"http://cm.l.qq.com/?Bid=dca6ea17cca2289887e097157db2998a\",\"reporttime\":\"0\"},{\"url\":\"http://tytx.m.cn.miaozhen.com/x/k=2077081&p=7EDF2&dx=qqvideo-20180416&rt=2&ns=117.139.14.206&ni=PUB_4048264&v=__LOC__&xa=__ADPLATFORM__&tr=zg6LdaIAWtUNwQsmfADFKE9VAZMm&txp=c921fe7b60bb17dc110a0e96f668&o=\",\"reporttime\":\"0\"},{\"url\":\"http://vqq.admaster.com.cn/i/a105983,b2439358,c2083,i0,m202,8a1,8b1,0iPUB_4048264,1e1,1fc921fe7b60bb17dc110a0e96f668,hzg6LdaIAWtUNwQsmfADFKE9VAZMm\",\"reporttime\":\"0\"},{\"url\":\"http://p.tencentmind.com/p?oid=PUB_4048264&soid=zg6LdaIAWtUNwQsmfADFKE9VAZMm&soidip=117.139.14.206&loc=LV_1001_LDVi_LD&lkey=4006&OpenUDID=&MAC=&IDFA=&IP=117.139.14.206&IMEI=&AndroidID=\",\"reporttime\":\"0\"}]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"4039750\",\"type\":\"LD\",\"display_code\":\"\",\"cover_id\":\"\",\"url\":\"http://bla.gtimg.com/qqlive/201804/BRDS_20180403115113991.mp4\",\"urlsmall\":\"http://bla.gtimg.com/qqlive/201804/BRDS_20180403115113991.mp4\",\"duration\":\"15000\",\"ReportTime\":\"0\",\"no_click\":\"N\",\"inner_jump\":\"N\",\"link\":\"http://imc.l.qq.com/click?oid=4039750&cid=2701036&adtype=LD&refluence=4006&requestl=4006&soid=zg6LdaIAWtUNwQsmfAE+ksubAZMm&aver=0&ev=6.0.352.352&aver_flag=6151&traffic=&tagid=&si=341225226&target=4006&isfloatindex=1&pf=in&loc=LV_1001_LDVi_LD&vptag=%7Crec-populartoday%3Atitle&click_data=dXNlcl9pbmZvPXZRRGpnVGctRVJHNSZ1cF92ZXJzaW9uPVY2LjAuMzUyLjM1MiZsdnByaT0zNzAwJmJldGE9LTEuMDAwMDAw&chid=0&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=4039750&cid=2701036&adtype=LD&mt=15000&refluence=4006&requestl=4006&soid=zg6LdaIAWtUNwQsmfAE+ksubAZMm&aver=0&ev=6.0.352.352&aver_flag=6151&traffic=&tagid=&si=341225226&l=4006&isfloatindex=1&chid=0&acpm=2&imagelog=1&imagemd5=784792da069f536734fb4f9188021279&iptype=0&cip=117.139.14.206&isthirdip=0&fl=1&gf=2&tailroll=1&adlength=30000&ufc_match=0&ip_filter=1&ufc_filter=0&urlchid=0&use_axp=1&axpheader=1&use_txp=1&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXNlcl9pbmZvPXZRRGpnVGctRVJHNSZ1cF92ZXJzaW9uPVY2LjAuMzUyLjM1MiZsdnByaT0zNzAwJmJldGE9LTEuMDAwMDAw&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"params\":\"oid=4039750&loc=LV_1001_LDVi_LD&orderfile=http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2F&vid=&get_type=1&c_type=0&button_name=Come+On!&richdata=%7B%22loc%22%3A%22LV_1001_LDVi_LD%22%2C%22oid%22%3A%224039750%22%2C%22orderfile%22%3A%22http%3A%2F%2Fbla.gtimg.com%2Fqqlive%2F%22%2C%22plugins%22%3A%7B%22click_text_desc%22%3A%22%22%2C%22safeInterface%22%3A%22N%22%2C%22trueview%22%3A%22Y%22%7D%2C%22vid%22%3A%22%22%7D\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"http://117.177.249.146/vlive.qqvideo.tc.qq.com/APRWHy4T1MF0u3df4qYacqx_OYZI2Cs3ayg8LpNbTt70/l0200fe07ii.p201.1.mp4?vkey=0D50E4041AB8BA486A1A45B959C57949BA63C1C880C63F4D89003A35BCCAB5B6E1E327DE48D01DB4B88277606914A4945D2886B6BACD633FD2A7F710C36D41B11DB662AC98CA6BD12F2EFA8155FCEBA96F904766534147B84412B040F8BAC431190206AEAB55D4317026A6E79E7C184E84B2173A99D73908&platform=10201&sdtfrom=&fmt=shd&level=0\",\"md5\":\"b7bfdf3d72a35069a05b8ddec0b4b7e2\",\"cs\":\"2565702\",\"ds\":\"15\",\"width\":\"640\",\"height\":\"360\",\"vid\":\"l0200fe07ii\"},{\"index\":\"1\",\"url\":\"http://117.177.249.146/vlive.qqvideo.tc.qq.com/APRWHy4T1MF0u3df4qYacqx_OYZI2Cs3ayg8LpNbTt70/l0200fe07ii.p201.1.mp4?vkey=0D50E4041AB8BA486A1A45B959C57949BA63C1C880C63F4D89003A35BCCAB5B6E1E327DE48D01DB4B88277606914A4945D2886B6BACD633FD2A7F710C36D41B11DB662AC98CA6BD12F2EFA8155FCEBA96F904766534147B84412B040F8BAC431190206AEAB55D4317026A6E79E7C184E84B2173A99D73908&platform=10201&sdtfrom=&fmt=shd&level=0\",\"md5\":\"b7bfdf3d72a35069a05b8ddec0b4b7e2\",\"cs\":\"2565702\",\"ds\":\"15\",\"width\":\"640\",\"height\":\"360\",\"vid\":\"l0200fe07ii\"}],\"reportUrlOther\":{\"reportitem\":[{\"url\":\"http://cm.l.qq.com/?Bid=f4d5696444ef1184acc67176ebe9026c\",\"reporttime\":\"0\"},{\"url\":\"http://cm.l.qq.com/?Bid=dca6ea17cca2289887e097157db2998a\",\"reporttime\":\"0\"},{\"url\":\"http://tytx.m.cn.miaozhen.com/x/k=2076619&p=7E0hK&dx=qqvideo-20180416&rt=2&ns=117.139.14.206&ni=PUB_4039750&v=__LOC__&xa=__ADPLATFORM__&tr=zg6LdaIAWtUNwQsmfAE+ksubAZMm&mo=&m0=&m0a=[DUID]&m1=[ANDROIDID1]&m1a=&m2=&m4=__AAID__&m5=&m6=[MAC1]&m6a=&txp=c921fe7b60bb17dc110a0e96f668&o=\",\"reporttime\":\"0\"},{\"url\":\"http://p.tencentmind.com/p?oid=PUB_4039750&soid=zg6LdaIAWtUNwQsmfAE+ksubAZMm&soidip=117.139.14.206&loc=LV_1001_LDVi_LD&lkey=4006&OpenUDID=&MAC=&IDFA=&IP=117.139.14.206&IMEI=&AndroidID=\",\"reporttime\":\"0\"}]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"LD\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=295&adtype=LD&soid=zg6LdaIAWtUNwQsmfAIlj8a2AZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=0&traffic=&ip_filter=1&ufc_filter=0&backfunnel=403&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"LD\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=295&adtype=LD&soid=zg6LdaIAWtUNwQsmfAN9DyRhAZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=0&traffic=&ip_filter=1&ufc_filter=0&backfunnel=403&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"LD\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=295&adtype=LD&soid=zg6LdaIAWtUNwQsmfAQ2hBorAZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=0&traffic=&ip_filter=1&ufc_filter=0&backfunnel=403&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"LD\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=295&adtype=LD&soid=zg6LdaIAWtUNwQsmfAVuBPj8AZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=0&traffic=&ip_filter=1&ufc_filter=0&backfunnel=403&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"KB\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=90&adtype=KB&soid=zg6LdaIAWtUNwQsmfAAirFzeAZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=6148&traffic=&ip_filter=1&ufc_filter=0&ufc_stra=0&ufc_match=0&backfunnel=201&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}},{\"order_id\":\"1\",\"type\":\"PVL\",\"display_code\":\"Empty\",\"url\":\"\",\"duration\":\"\",\"link\":\"\",\"reportUrl\":\"http://livep.l.qq.com/livemsg?o=90&adtype=PVL&soid=zg6LdaIAWtUNwQsmfADifPOsAZMm&r90=1&l=4006&refluence=4006&requestl=4006&tagid=0&pf=in&si=341225226&ev=6.0.352.352&aver_flag=6148&traffic=&ip_filter=1&ufc_filter=0&ufc_stra=0&ufc_match=0&backfunnel=201&use_axp=0&axpheader=1&use_txp=0&txpheader=1&st_id_t=0&flow_reuse=1&ping_data=dXBfdmVyc2lvbj1WNi4wLjM1Mi4zNTI=&vid=w0026akhiyp&pf_ex=pc&live=0&aid_tpid=23&aid_tpid2=11730&aid_tpid3=11742&aid_dura=129&aid_vid_drm=0&aid_cid_drm=0&aid_copyright=5&aid_cover=wsgfca2aytai8pe&aid_column=132&aid_vip_type=1\",\"shareable\":\"0\",\"image\":[{\"index\":\"0\",\"url\":\"\",\"width\":\"0\",\"height\":\"0\",\"vid\":\"\"}],\"reportUrlOther\":{\"reportitem\":[]},\"reportUrlSDK\":{\"reportitem\":[]},\"clickReportUrlOther\":{\"reportitem\":[]},\"reportUrlView\":{\"reportitem\":[]}}]},\"adGetv\":{\"merged\":1,\"oid2url\":15,\"br\":0,\"id\":10201},\"adLoc\": {\"adFlag\":0,\"add\":0,\"aid\":\"1\",\"aidInAdtype\":[{\"adid\":\"4006\",\"adtype\":\"KB\"},{\"adid\":\"4006\",\"adtype\":\"LD\"},{\"adid\":\"4006\",\"adtype\":\"PVL\"}],\"breakTime\":null,\"breaks\":\"0.0\",\"duration\":129,\"iCheckLogin\":1,\"iCheckUser\":1,\"iUserTypeReq\":-1,\"iVipInfoRsp\":1,\"isvip\":0,\"mult\":null,\"oaid\":\"1\",\"rfid\":\"6e8f741c684df89c47164cb9b2bb8e43_1523883329\",\"tm\":1523883329,\"tpid\":23,\"vad\":null,\"vid\":\"w0026akhiyp\",\"vid2aid\": \"0\"}}",
+    "errCode": 0,
+    "vinfo": "{\"dltype\":8,\"exem\":0,\"fl\":{\"cnt\":2,\"fi\":[{\"id\":321001,\"name\":\"sd\",\"lmt\":0,\"sb\":1,\"cname\":\"标清;(270P)\",\"br\":20,\"profile\":4,\"drm\":0,\"video\":1,\"audio\":1,\"fs\":3271952,\"sl\":0},{\"id\":321002,\"name\":\"hd\",\"lmt\":0,\"sb\":1,\"cname\":\"高清;(480P)\",\"br\":45,\"profile\":4,\"drm\":0,\"video\":1,\"audio\":1,\"fs\":6738296,\"sl\":1}]},\"fp2p\":2,\"hs\":0,\"ip\":\"117.139.14.206\",\"ls\":0,\"preview\":129,\"s\":\"o\",\"sfl\":{\"cnt\":0},\"tstid\":6,\"tm\":1523883329,\"vl\":{\"cnt\":1,\"vi\":[{\"br\":45,\"ch\":0,\"ct\":21600,\"dm\":\"0\",\"drm\":0,\"dsb\":0,\"enc\":\"0\",\"fc\":1,\"fmd5\":\"aeaeb85b36dba595926d8b229740cbc9\",\"fn\":\"w0026akhiyp.321002.ts\",\"fps\":\"25\",\"fs\":6738296,\"fst\":5,\"head\":0,\"hevc\":0,\"hfs\":\"7749040\",\"iflag\":1,\"keyid\":\"w0026akhiyp.321002\",\"lnk\":\"w0026akhiyp\",\"logo\":0,\"mst\":8,\"pl\":[{\"cnt\":3,\"pd\":[{\"cd\":2,\"h\":45,\"w\":80,\"r\":10,\"c\":10,\"fmt\":40001,\"fn\":\"q1\",\"url\":\"https://puui.qpic.cn/video_caps/0/\"},{\"cd\":2,\"h\":90,\"w\":160,\"r\":5,\"c\":5,\"fmt\":40002,\"fn\":\"q2\",\"url\":\"https://puui.qpic.cn/video_caps/0/\"},{\"cd\":2,\"h\":135,\"w\":240,\"r\":5,\"c\":5,\"fmt\":40003,\"fn\":\"q3\",\"url\":\"https://puui.qpic.cn/video_caps/0/\"}]}],\"share\":1,\"sig\":\"344cb6ce8cfce3c684ed82d22d574bc034d78204\",\"st\":2,\"tail\":0,\"targetid\":\"2577785606\",\"td\":\"129.621\",\"ti\":\"美国公布一组叙利亚卫星图像 显示三处被炸地点情况\",\"tie\":0,\"type\":1127,\"ul\":{\"ui\":[{\"url\":\"https://apd-29d1a319b75aaf67c502c3ee42837740.v.smtcdns.com/moviets.tc.qq.com/AEPQkBbr610HQfaZjanBar6Y6S8GGj6LI9EN7LJBc06U/ijZSx2u1Z1W5hvyajH7dOnasOMnS8WEskvjPT8o75jhgHZWoNGvWJFTKeP8ge7hqBtbQ3nGkGZO9Fe-oSCf7ehE4z247VMUO2b933zU5ToPQakStlFuAZY2HablO3pHDxilV_0ma_daWxftSP5js9z5bPROpsISA/w0026akhiyp.321002.ts.m3u8?ver=4\",\"vt\":2803,\"dtc\":0,\"dt\":2},{\"url\":\"https://apd-9fc0d10bc63c522221e6aac7eefc6c00.v.smtcdns.com/moviets.tc.qq.com/AEPQkBbr610HQfaZjanBar6Y6S8GGj6LI9EN7LJBc06U/ijZSx2u1Z1W5hvyajH7dOnasOMnS8WEskvjPT8o75jhgHZWoNGvWJFTKeP8ge7hqBtbQ3nGkGZO9Fe-oSCf7ehE4z247VMUO2b933zU5ToPQakStlFuAZY2HablO3pHDxilV_0ma_daWxftSP5js9z5bPROpsISA/w0026akhiyp.321002.ts.m3u8?ver=4\",\"vt\":2803,\"dtc\":0,\"dt\":2},{\"url\":\"https://apd-725e283d33ab838c86096663062b5cbe.v.smtcdns.com/moviets.tc.qq.com/AEPQkBbr610HQfaZjanBar6Y6S8GGj6LI9EN7LJBc06U/ijZSx2u1Z1W5hvyajH7dOnasOMnS8WEskvjPT8o75jhgHZWoNGvWJFTKeP8ge7hqBtbQ3nGkGZO9Fe-oSCf7ehE4z247VMUO2b933zU5ToPQakStlFuAZY2HablO3pHDxilV_0ma_daWxftSP5js9z5bPROpsISA/w0026akhiyp.321002.ts.m3u8?ver=4\",\"vt\":2803,\"dtc\":0,\"dt\":2},{\"url\":\"https://ltsdl.qq.com/ijZSx2u1Z1W5hvyajH7dOnasOMnS8WEskvjPT8o75jhgHZWoNGvWJFTKeP8ge7hqBtbQ3nGkGZO9Fe-oSCf7ehE4z247VMUO2b933zU5ToPQakStlFuAZY2HablO3pHDxilV_0ma_daWxftSP5js9z5bPROpsISA/w0026akhiyp.321002.ts.m3u8?ver=4\",\"vt\":12620,\"dtc\":0,\"dt\":2}],\"m3u8\":\"#EXTM3U\\n#EXT-X-VERSION:3\\n#EXT-X-MEDIA-SEQUENCE:0\\n#EXT-X-TARGETDURATION:15\\n#EXT-X-PLAYLIST-TYPE:VOD\\n#EXTINF:12.000,\\n00_w0026akhiyp.321002.1.ts?index=0\\u0026start=0\\u0026end=12000\\u0026brs=0\\u0026bre=498575\\u0026ver=4\\n#EXTINF:10.000,\\n01_w0026akhiyp.321002.1.ts?index=1\\u0026start=12000\\u0026end=22000\\u0026brs=498576\\u0026bre=1016515\\u0026ver=4\\n#EXTINF:12.000,\\n02_w0026akhiyp.321002.1.ts?index=2\\u0026start=22000\\u0026end=34000\\u0026brs=1016516\\u0026bre=1582959\\u0026ver=4\\n#EXTINF:12.000,\\n03_w0026akhiyp.321002.1.ts?index=3\\u0026start=34000\\u0026end=46000\\u0026brs=1582960\\u0026bre=2393991\\u0026ver=4\\n#EXTINF:12.000,\\n04_w0026akhiyp.321002.1.ts?index=4\\u0026start=46000\\u0026end=58000\\u0026brs=2393992\\u0026bre=3004615\\u0026ver=4\\n#EXTINF:12.000,\\n05_w0026akhiyp.321002.1.ts?index=5\\u0026start=58000\\u0026end=70000\\u0026brs=3004616\\u0026bre=3658667\\u0026ver=4\\n#EXTINF:12.000,\\n06_w0026akhiyp.321002.1.ts?index=6\\u0026start=70000\\u0026end=82000\\u0026brs=3658668\\u0026bre=4317043\\u0026ver=4\\n#EXTINF:12.000,\\n07_w0026akhiyp.321002.1.ts?index=7\\u0026start=82000\\u0026end=94000\\u0026brs=4317044\\u0026bre=4898151\\u0026ver=4\\n#EXTINF:12.000,\\n08_w0026akhiyp.321002.1.ts?index=8\\u0026start=94000\\u0026end=106000\\u0026brs=4898152\\u0026bre=5665191\\u0026ver=4\\n#EXTINF:12.000,\\n09_w0026akhiyp.321002.1.ts?index=9\\u0026start=106000\\u0026end=118000\\u0026brs=5665192\\u0026bre=6164895\\u0026ver=4\\n#EXTINF:11.792,\\n010_w0026akhiyp.321002.1.ts?index=10\\u0026start=118000\\u0026end=129792\\u0026brs=6164896\\u0026bre=6738295\\u0026ver=4\\n#EXT-X-ENDLIST\\n\"},\"vh\":480,\"vid\":\"w0026akhiyp\",\"videotype\":23,\"vr\":0,\"vst\":2,\"vw\":640,\"wh\":1.3333334,\"wl\":{\"wi\":[{\"id\":19,\"x\":24,\"y\":24,\"w\":149,\"h\":48,\"a\":100,\"md5\":\"dcc9dc5c478c4100ea2817c5e6020f26\",\"url\":\"http://puui.qpic.cn/vcolumn_pic/0/logo_qing_xi_color_336_108.png/0\",\"surl\":\"https://puui.qpic.cn/vcolumn_pic/0/logo_qing_xi_color_336_108.png/0\"}]}}]}}"
+}
+
+其中的vinfo部分如下：
+{
+    "dltype": 8,
+    "exem": 0,
+    "fl": {
+        "cnt": 3,
+        "fi": [
+            {
+                "id": 321001,
+                "name": "sd",
+                "lmt": 0,
+                "sb": 1,
+                "cname": "标清;(270P)",
+                "br": 34,
+                "profile": 4,
+                "drm": 0,
+                "video": 1,
+                "audio": 1,
+                "fs": 2408656,
+                "sl": 1
+            },
+            {
+                "id": 321002,
+                "name": "hd",
+                "lmt": 0,
+                "sb": 1,
+                "cname": "高清;(480P)",
+                "br": 39,
+                "profile": 4,
+                "drm": 0,
+                "video": 1,
+                "audio": 1,
+                "fs": 4835736,
+                "sl": 0
+            },
+            {
+                "id": 321003,
+                "name": "shd",
+                "lmt": 0,
+                "sb": 1,
+                "cname": "超清;(720P)",
+                "br": 44,
+                "profile": 4,
+                "drm": 0,
+                "video": 1,
+                "audio": 1,
+                "fs": 10714308,
+                "sl": 0
+            }
+        ]
+    },
+    "fp2p": 2,
+    "hs": 0,
+    "ip": "118.122.120.36",
+    "ls": 0,
+    "preview": 60,
+    "s": "o",
+    "sfl": {
+        "cnt": 0
+    },
+    "tstid": 6,
+    "tm": 1523608716,
+    "vl": {
+        "cnt": 1,
+        "vi": [
+            {
+                "br": 34,
+                "ch": 0,
+                "ct": 21600,
+                "dm": "0",
+                "drm": 0,
+                "dsb": 0,
+                "enc": "0",
+                "fc": 1,
+                "fmd5": "7b72cb3645362396f8207b2597fa826c",
+                "fn": "h0628oxv99z.321001.ts",
+                "fps": "25",
+                "fs": 2408656,
+                "fst": 5,
+                "head": 0,
+                "hevc": 0,
+                "hfs": "2769954",
+                "iflag": 0,
+                "keyid": "h0628oxv99z.321001",
+                "lnk": "h0628oxv99z",
+                "logo": 0,
+                "mst": 8,
+                "pl": null,
+                "share": 1,
+                "sig": "f1e941075e06ba975c2b302ceb0e21b573dd2c0a",
+                "st": 2,
+                "tail": 0,
+                "targetid": "2568248378",
+                "td": "60.08",
+                "ti": "女老板代买彩票中千万巨奖 连夜冒雨送还买主",
+                "tie": 0,
+                "type": 24,
+                "ul": {
+                    "ui": [
+                        {
+                            "url": "https://apd-4f80e9934ba49f897d67bee4beb37de9.v.smtcdns.com/defaultts.tc.qq.com/ACdAA-sBFJogj2o_elr1AuZT41ymB_INBxTu60IiwyJU/e40ctyASm5lDGW9bJIX3rjGBIcLv2kPbiGGiNvYX7oqcFozioBxETitml2FBPv0QlNXf5A_eJJWnwBPoMJJwMYQ5c6uAcYXwm-ZHjEOGMokQzmjNQFCWBTKV8paHSW7mUy9xScldSFeEpQ7Lt3cFZdroaKEoAMZi/h0628oxv99z.321001.ts.m3u8?ver=4",
+                            "vt": 2800,
+                            "dtc": 0,
+                            "dt": 2
+                        },
+                        {
+                            "url": "https://apd-d9abdaa3a51f524a0912cc029ec8a781.v.smtcdns.com/defaultts.tc.qq.com/ACdAA-sBFJogj2o_elr1AuZT41ymB_INBxTu60IiwyJU/e40ctyASm5lDGW9bJIX3rjGBIcLv2kPbiGGiNvYX7oqcFozioBxETitml2FBPv0QlNXf5A_eJJWnwBPoMJJwMYQ5c6uAcYXwm-ZHjEOGMokQzmjNQFCWBTKV8paHSW7mUy9xScldSFeEpQ7Lt3cFZdroaKEoAMZi/h0628oxv99z.321001.ts.m3u8?ver=4",
+                            "vt": 2800,
+                            "dtc": 0,
+                            "dt": 2
+                        },
+                        {
+                            "url": "https://apd-1e44ff62b43095b8bea36f6147b19340.v.smtcdns.com/defaultts.tc.qq.com/ACdAA-sBFJogj2o_elr1AuZT41ymB_INBxTu60IiwyJU/e40ctyASm5lDGW9bJIX3rjGBIcLv2kPbiGGiNvYX7oqcFozioBxETitml2FBPv0QlNXf5A_eJJWnwBPoMJJwMYQ5c6uAcYXwm-ZHjEOGMokQzmjNQFCWBTKV8paHSW7mUy9xScldSFeEpQ7Lt3cFZdroaKEoAMZi/h0628oxv99z.321001.ts.m3u8?ver=4",
+                            "vt": 2800,
+                            "dtc": 0,
+                            "dt": 2
+                        },
+                        {
+                            "url": "https://ltsdl.qq.com/e40ctyASm5lDGW9bJIX3rjGBIcLv2kPbiGGiNvYX7oqcFozioBxETitml2FBPv0QlNXf5A_eJJWnwBPoMJJwMYQ5c6uAcYXwm-ZHjEOGMokQzmjNQFCWBTKV8paHSW7mUy9xScldSFeEpQ7Lt3cFZdroaKEoAMZi/h0628oxv99z.321001.ts.m3u8?ver=4",
+                            "vt": 12620,
+                            "dtc": 0,
+                            "dt": 2
+                        }
+                    ],
+                    "m3u8": "#EXTM3U\\n#EXT-X-VERSION:3\\n#EXT-X-MEDIA-SEQUENCE:0\\n#EXT-X-TARGETDURATION:14\\n#EXT-X-PLAYLIST-TYPE:VOD\\n#EXTINF:9.600,\\n00_h0628oxv99z.321001.1.ts?index=0\\u0026start=0\\u0026end=9600\\u0026brs=0\\u0026bre=287451\\u0026ver=4\\n#EXTINF:8.880,\\n01_h0628oxv99z.321001.1.ts?index=1\\u0026start=9600\\u0026end=18480\\u0026brs=287452\\u0026bre=696351\\u0026ver=4\\n#EXTINF:9.200,\\n02_h0628oxv99z.321001.1.ts?index=2\\u0026start=18480\\u0026end=27680\\u0026brs=696352\\u0026bre=1052423\\u0026ver=4\\n#EXTINF:10.840,\\n03_h0628oxv99z.321001.1.ts?index=3\\u0026start=27680\\u0026end=38520\\u0026brs=1052424\\u0026bre=1408307\\u0026ver=4\\n#EXTINF:11.600,\\n04_h0628oxv99z.321001.1.ts?index=4\\u0026start=38520\\u0026end=50120\\u0026brs=1408308\\u0026bre=2000319\\u0026ver=4\\n#EXTINF:10.125,\\n05_h0628oxv99z.321001.1.ts?index=5\\u0026start=50120\\u0026end=60245\\u0026brs=2000320\\u0026bre=2408655\\u0026ver=4\\n#EXT-X-ENDLIST\\n"
+                },
+                "vh": 272,
+                "vid": "h0628oxv99z",
+                "videotype": 23,
+                "vr": 0,
+                "vst": 2,
+                "vw": 480,
+                "wh": 1.7647059,
+                "wl": {
+                    "wi": [
+                        {
+                            "id": 19,
+                            "x": 14,
+                            "y": 14,
+                            "w": 85,
+                            "h": 27,
+                            "a": 100,
+                            "md5": "dcc9dc5c478c4100ea2817c5e6020f26",
+                            "url": "http://puui.qpic.cn/vcolumn_pic/0/logo_qing_xi_color_336_108.png/0",
+                            "surl": "https://puui.qpic.cn/vcolumn_pic/0/logo_qing_xi_color_336_108.png/0"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

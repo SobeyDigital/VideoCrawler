@@ -1,0 +1,14 @@
+(()=>{
+    document.onmouseover=function(event){
+       console.log("onmouseover");window.hacker(event);
+    };
+    document.onmouseout=function(event){
+       console.log("onmouseout");window.hacker(event);
+    };
+    document.onmouseleave=function(event){
+       console.log("onmouseleave");window.hacker(event);
+    };
+    document.onmousemove=function(event){
+       console.log("onmousemove");window.hacker(event);
+    };
+})()

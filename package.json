@@ -1,0 +1,42 @@
+{
+  "name": "videocrawler",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/app.js",
+    "build_win": "pkg -t win . --out-path ./build",
+    "build_mac": "pkg -t macos . --out-path ./build",
+    "build_linux": "pkg -t linux . --out-path ./build"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "chrome-remote-interface": "^0.25.6",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "^2.5.9",
+    "express": "~4.14.1",
+    "jsdom": "^11.11.0",
+    "log4js": "^2.8.0",
+    "m3u8stream": "^0.2.2",
+    "morgan": "~1.7.0",
+    "mysql": "^2.15.0",
+    "serve-favicon": "~2.3.2",
+    "silly-datetime": "^0.1.2",
+    "superagent": "~3.5.2",
+    "superagent-proxy": "^1.0.3",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {},
+  "bin": "./bin/app.js",
+  "pkg": {
+    "scripts": [
+      "routes/**/*.js"
+    ],
+    "assets": [
+      "www/**/*",
+      "public/**/*",
+      "__config__.json",
+      "zk/*"
+    ]
+  }
+}

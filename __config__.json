@@ -1,0 +1,35 @@
+{
+    /*进程名，必须*/
+    "appname":"videocrawl",
+    /*端口，默认3000*/
+    "port":3000,
+    /* 支持行级注释。必须用星号注释 */
+    "chrome":{
+        "home":"E:/programing/node_workspace/Chrome",
+        "headless":false
+        /*port:9222*/
+        /*"data_dir":""*/
+    },
+    "usefilelog": false,
+    "datasource":"MYSQL",
+    "fetch_max_num":1,
+    /*多进程模式*/
+    /*"multi_process_count": 8 */
+    /*集群模式配置。目前采用的是zookeeper方式*/
+    "cluster":{
+        "zk":"127.0.0.1:2181"
+    },
+
+
+    "MYSQL":{
+        "host":"127.0.0.1",
+        "user":"admin",
+        "password":"root",
+        "connectionLimit":100,
+        "database" : "sobey_videocrawl"
+    },
+
+    "ElasticSerch":{
+
+    }
+}

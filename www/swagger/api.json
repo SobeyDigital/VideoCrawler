@@ -1,0 +1,632 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": " **免责申明**：本工具仅为测试演示使用，所涉及内容版权归源站内容提供商所有。<br/><br/> **下载说明**：本服务仅提供最简单的下载处理，且下载会占用处理能力，请慎重考虑。<br/><br/> **DEMO地址**：[演示demo地址](/demo)",
+        "version": "0.1.0",
+        "title": "视频地址爬取服务api",
+        "Demo page": "/demo"
+    },
+    "basePath": "/",
+    "paths": {
+        "/fetch_video":{
+            "post": {
+                "tags": [
+                    "视频抓取"
+                ],
+                "summary": "提交一个视频抓取任务",
+                "description": "提交一个视频抓取任务。如果传入了**回调地址**，则同步返回为任务信息，当任务完成或失败，会通过**POST**方式，将**Captured**对象信息发送该地址",
+                "operationId": "fetch_video",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "抓取目标数据",
+                        "required": true,
+                        "type": "object",
+                        "schema":{
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string",
+                                    "example": "http://v.youku.com/v_show/id_XMzYzMjQxNjY5Ng==.html?spm=a2hww.20027244.m_250036.5~5!2~5~5!2~5~1!2~3~A&f=51757100",
+                                    "description": "视频网站的播放页面地址"
+                                }
+                            }
+                        },
+                        "example":{
+                            "url":"http://v.youku.com/v_show/id_XMzYzMjQxNjY5Ng==.html?spm=a2hww.20027244.m_250036.5~5!2~5~5!2~5~1!2~3~A&f=51757100"
+                        }
+                    },
+                    {
+                        "name": "callback",
+                        "in": "header",
+                        "description": "回调地址。该回调地址必须是一个【POST请求, content-type=application/json】的地址",
+                        "required": false,
+                        "type": "string",
+                        "example": "http://yourhost:yourport/callback"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "分析成功。同步返回分析后的结果",
+                        "schema": {
+                            "$ref": "#/definitions/Captured"
+                        }
+                    },
+                    "202":{
+                        "description": "header中存在callback信息，请求成功",
+                        "schema": {
+                            "$ref": "#/definitions/Job"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        },
+        "/download_m3u8":{
+            "post": {
+                "tags": [
+                    "视频抓取"
+                ],
+                "summary": "提交一个m3u8下载任务",
+                "description": "提交一个m3u8下载任务。如果传入了**回调地址**，则同步返回为任务信息，当任务完成或失败，会通过**POST**方式，将**DownloadResult**对象信息发送该地址",
+                "operationId": "download_m3u8",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "download-request",
+                        "in": "body",
+                        "description": "M3U8下载请求",
+                        "required": true,
+                        "type": "object",
+                        "schema":{
+                            "type": "object",
+                            "$ref": "#/definitions/DownloadRequest"
+                        }
+                    },
+                    {
+                        "name": "callback",
+                        "in": "header",
+                        "description": "回调地址。该回调地址必须是一个【POST请求, content-type=application/json】的地址",
+                        "required": false,
+                        "type": "string",
+                        "example": "http://yourhost:yourport/callback"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "分析成功。同步返回分析后的结果",
+                        "schema": {
+                            "$ref": "#/definitions/DownloadResult"
+                        }
+                    },
+                    "202":{
+                        "description": "header中存在callback信息，请求成功",
+                        "schema": {
+                            "$ref": "#/definitions/Job_Download"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        },
+        "/fetch_video_jobs":{
+            "get": {
+                "tags": [
+                    "信息查询"
+                ],
+                "summary": "查询抓取任务",
+                "description": "查询抓取任务",
+                "operationId": "fetch_video_jobs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "cur_page",
+                        "in": "query",
+                        "description": "当前页，从1开始。不传则默认为1",
+                        "required": false,
+                        "type": "integer",
+                        "example":1
+                    },
+                    {
+                        "name": "jobid",
+                        "in": "query",
+                        "description": "同步返回的jobid",
+                        "required": false,
+                        "type": "string",
+                        "example": "824qsrg-aferh2-ffhccha-asdgsdg"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "任务状态。0创建,-1失败,2成功",
+                        "required": false,
+                        "type": "integer",
+                        "enum": [0,-1,2]
+                    },
+                    {
+                        "name": "createtime_from",
+                        "in": "query",
+                        "description": "创建时间起点。标准日期字符串",
+                        "required": false,
+                        "type": "string",
+                        "example": "2018-06-11"
+                    },
+                    {
+                        "name": "createtime_to",
+                        "in": "query",
+                        "description": "创建时间终点。标准日期字符串",
+                        "required": false,
+                        "type": "string",
+                        "example": "2018-06-11"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "查询结果",
+                        "schema": {
+                            "$ref": "#/definitions/JobQueryResult"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        },
+        "/download_jobs":{
+            "get": {
+                "tags": [
+                    "信息查询"
+                ],
+                "summary": "查询下载任务",
+                "description": "查询下载任务",
+                "operationId": "download_jobs",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "cur_page",
+                        "in": "query",
+                        "description": "当前页，从1开始。不传则默认为1",
+                        "required": false,
+                        "type": "integer",
+                        "example":1
+                    },
+                    {
+                        "name": "jobid",
+                        "in": "query",
+                        "description": "同步返回的jobid",
+                        "required": false,
+                        "type": "string",
+                        "example": "824qsrg-aferh2-ffhccha-asdgsdg"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "任务状态。0创建,-1失败,2成功",
+                        "required": false,
+                        "type": "integer",
+                        "enum": [0,-1,2]
+                    },
+                    {
+                        "name": "createtime_from",
+                        "in": "query",
+                        "description": "创建时间起点。标准日期字符串",
+                        "required": false,
+                        "type": "string",
+                        "example": "2018-06-11"
+                    },
+                    {
+                        "name": "createtime_to",
+                        "in": "query",
+                        "description": "创建时间终点。标准日期字符串",
+                        "required": false,
+                        "type": "string",
+                        "example": "2018-06-11"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "查询结果",
+                        "schema": {
+                            "$ref": "#/definitions/JobQueryResult"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        },
+        "/fetch_job_result":{
+            "get": {
+                "tags": [
+                    "信息查询"
+                ],
+                "summary": "查询抓取任务的结果。只有成功的任务才会返回结果",
+                "description": "查询抓取任务的结果。只有成功的任务才会返回结果",
+                "operationId": "fetch_job_result",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "jobid",
+                        "in": "query",
+                        "description": "同步返回的jobid",
+                        "required": false,
+                        "type": "string",
+                        "example": "824qsrg-aferh2-ffhccha-asdgsdg"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "查询结果",
+                        "schema": {
+                            "$ref": "#/definitions/Captured"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        },
+        "/download_job_result":{
+            "get": {
+                "tags": [
+                    "信息查询"
+                ],
+                "summary": "查询下载任务的结果。只有成功的任务才会返回结果",
+                "description": "查询下载任务的结果。只有成功的任务才会返回结果",
+                "operationId": "download_job_result",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "jobid",
+                        "in": "query",
+                        "description": "同步返回的jobid",
+                        "required": false,
+                        "type": "string",
+                        "example": "824qsrg-aferh2-ffhccha-asdgsdg"
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "非法的请求"
+                    },
+                    "200": {
+                        "description": "查询结果",
+                        "schema": {
+                            "$ref": "#/definitions/DownloadResult"
+                        }
+                    },
+                    "500":{
+                        "description": "服务器内部错误",
+                        "schema": {
+                            "type":"object",
+                            "$ref": "#/definitions/ERROR"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "ERROR":{
+            "description": "错误信息",
+            "type": "object",
+            "properties": {
+                "err": {
+                    "type": "string",
+                    "example": "Internal Sever Error: string is not null",
+                    "description": "这是异常信息"
+                }
+            }
+        },
+        "Captured": {
+            "description": "分析结果",
+            "type": "object",
+            "properties": {
+                "jobid": {
+                    "type": "string",
+                    "example": "xvadgqsg-sdgdfhw-ddhadh3-dfadhdh",
+                    "description": "任务发起的jobid"
+                },
+                "ok": {
+                    "type": "boolean",
+                    "example": true,
+                    "description": "分析是否成功"
+                },
+                "medias": {
+                    "type": "object",
+                    "description": "分析结果，【AnyGroup】表示一个组，分析结果可能有多个组",
+                    "properties": {
+                        "AnyGroup":{
+                            "type": "object",
+                            "description": "一组分析结果。",
+                            "properties":{
+                                "m3u8":{
+                                    "type": "string",
+                                    "example": "http://target/video.m3u8",
+                                    "description": "分析出的m3u8真实地址",
+                                    "required": false
+                                },
+                                "videos":{
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "example":["http://target/1.mp4"],
+                                    "description": "分析出的视频分段真实地址。比如youtube就是音视频分离的，这里会给出视频文件地址",
+                                    "required": false
+                                },
+                                "audios":{
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "example": ["http://target/1.mp3"],
+                                    "description": "分析出的音频分段真实地址",
+                                    "required": false
+                                },
+                                "mixed":{
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "example": ["http://target/all.mp4"],
+                                    "description": "大部分网站都给出的是这种音视频合一的地址",
+                                    "required": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "example": {
+                "ok":true,
+                "medias":{
+                    "goup1[hd106d0]":{
+                        "m3u8":"http://target/video.m3u8",
+                        "videos":["http://target/1.mp4"],
+                        "audios":["http://target/1.mp3"],
+                        "mixed":["http://target/all.mp4"]
+                    }
+                }
+            }
+        },
+        "Job": {
+            "description": "同步返回的任务信息。当通过设置header中的callback发起的异步服务请求时，会返回该数据",
+            "type": "object",
+            "properties": {
+                "jobid": {
+                    "type": "string",
+                    "example": "asdgsdg-df2433DG-ASG11DF-sdgag",
+                    "description": "分析任务的jobid"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "任务的类型。对于分析任务，类型为capture",
+                    "example":"capture"
+                }
+            }
+        },
+        "Job_Download": {
+            "description": "同步返回的任务信息。当通过设置header中的callback发起的异步服务请求时，会返回该数据",
+            "type": "object",
+            "properties": {
+                "jobid": {
+                    "type": "string",
+                    "example": "asdgsdg-df2433DG-ASG11DF-sdgag",
+                    "description": "分析任务的jobid"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "任务的类型。对于分析任务，类型为download",
+                    "example":"download"
+                }
+            }
+        },
+        "DownloadRequest":{
+            "description": "文件下载请求",
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "example": "http://pl-ali.youku.com/playlist/m3u8",
+                    "description": "下载内容的原地址"
+                },
+                "folder": {
+                    "type": "string",
+                    "example": "/usr/local/download",
+                    "description": "<span style='font-weight:bold'>服务器</span>的下载目录"
+                },
+                "filename": {
+                    "type": "string",
+                    "example": "test",
+                    "description": "下载文件的文件名，如果没有指定，将自动生成一个uuid的文件名"
+                },
+                "need_proxy": {
+                    "type": "boolean",
+                    "example": true,
+                    "description": "是否采用代理方式下载"
+                }
+            },
+            "required":["url", "folder"]
+        },
+        "DownloadResult":{
+            "description": "文件下载结果",
+            "type": "object",
+            "properties":{
+                "localpath":{
+                    "type": "string",
+                    "example": "/usr/local/download/test.mp4",
+                    "description": "下载后的地址"
+                }
+            }
+        },
+        "JobQueryResult":{
+            "description": "任务查询结果",
+            "type": "object",
+            "properties":{
+                "page_info":{
+                    "type": "object",
+                    "description": "分页信息",
+                    "properties":{
+                        "cur_count":{
+                            "type": "integer",
+                            "example": 14,
+                            "description": "当前查询结果数量",
+                            "required": true
+                        },
+                        "total_count":{
+                            "type": "integer",
+                            "example": 100,
+                            "description": "总数量",
+                            "required": true
+                        },
+                        "cur_page":{
+                            "type": "integer",
+                            "example": 3,
+                            "description": "当前查询的页数",
+                            "required": true
+                        },
+                        "total_page":{
+                            "type": "integer",
+                            "example": 10,
+                            "description": "总页数",
+                            "required": true
+                        }
+                    }
+                },
+                "results":{
+                    "type": "array",
+                    "description": "查询结果数组",
+                    "items": {
+                        "type": "object",
+                        "description": "查询结果",
+                        "properties":{
+                            "jobid":{
+                                "type": "string",
+                                "example": "824qsrg-aferh2-ffhccha-asdgsdg",
+                                "description": "当前查询结果数量",
+                                "required": true
+                            },
+                            "status":{
+                                "type": "integer",
+                                "example": 2,
+                                "description": "任务状态。0创建，-1失败，2成功",
+                                "required": true
+                            },
+                            "createtime":{
+                                "type": "string",
+                                "example": "2018-06-11",
+                                "description": "创建日期",
+                                "required": true
+                            },
+                            "updatetime":{
+                                "type": "string",
+                                "example": "2018-06-11",
+                                "description": "更新日期",
+                                "required": true
+                            },
+                            "message":{
+                                "type": "string",
+                                "example": "任务超时",
+                                "description": "如果任务失败，这里会有描述",
+                                "required": true
+                            },
+                            "callback":{
+                                "type": "string",
+                                "example": "http://localhost/callback",
+                                "description": "发起任务时传入的回调地址",
+                                "required": true
+                            },
+                            "notifystatus":{
+                                "type": "integer",
+                                "example": -1,
+                                "description": "当传入了callback，异步回调该地址的状态。1成功，-1失败",
+                                "required": true
+                            },
+                            "notifydesc":{
+                                "type": "string",
+                                "example": "sended",
+                                "description": "当传入了callback，异步回调该地址的描述。成功为sended，否则是错描述",
+                                "required": true
+                            },
+                            "notifytime":{
+                                "type": "string",
+                                "example": "2018-06-11",
+                                "description": "回调发起日期",
+                                "required": true
+                            },
+                            "client":{
+                                "type": "string",
+                                "example": "221.122.12.1",
+                                "description": "发起任务的客户端地址。可能是一个服务端地址",
+                                "required": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

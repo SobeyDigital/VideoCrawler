@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<%- include head %>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+        </div>
+        <div class="col-md-4 column">
+            <div>
+                <span style="font-size: 32px;font-weight: bold">视频抓取Demo展示</span>
+                <span style="font-size: 32px;font-weight: bold"><a href="/api" target="_blank">[API]</a></span>
+                <div style="width: 500px;display: flex;align-items: center">
+                    <div class="icon">
+                        <a href="http://v.qq.com" target='_blank'><img src="/rs/images/qq.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div class="icon">
+                        <a href="http://www.youku.com" target='_blank'><img src="/rs/images/youku.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div class="icon">
+                        <a href="http://www.youtube.com" target='_blank'><img src="/rs/images/youtube.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div class="icon">
+                        <a href="http://www.toutiao.com" target='_blank'><img src="/rs/images/toutiao.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div class="icon">
+                        <a href="http://www.iqiyi.com" target='_blank'><img src="/rs/images/iqiyi.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div class="icon">
+                        <a href="http://weibo.com" target='_blank'><img src="/rs/images/weibo.jpg" width="35px" height="35px"></a>
+                    </div>
+                    <div style="width: 150px;height: 35px;margin: -5px 0 0 10px;">
+                        <span style="color: #006666;font-style:oblique">还有更多的，<br/>请联系我们...</span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 5%;">
+                <label for="path">文件抓取目标路径：</label>
+                <input id="path" name="path" type="text"  style="color:#b7b7b7"
+                       class="form-control sc" value="C:\Users\WX\Desktop\download"/>
+            </div>
+            <div style="margin-top: 5%;">
+                <label for="url">输入视频页面地址：</label>
+                <input id="url" name="url" type="text"  class="form-control sc" value=""/>
+            </div>
+            <div style="margin-top: 5%;font-size: 20px;font-style: oblique">
+                免责申明：本工具仅为测试演示使用，所涉及内容版权归源站内容提供商所有。
+            </div>
+            <div>
+                <input style="margin-top: 5%;" type="button" value="视频地址分析" class="btn btn-default" onclick="fetch();"/>
+            </div>
+            <progress id="pro" style="margin-top: 10%;display: none"></progress>
+            <div id="download" style="margin-top: 5%;display: none">
+                下载视频到服务器...<progress id="pro2"></progress>
+            </div>
+            <div id="showrs" style="margin-top: 10%">
+            </div>
+
+        </div>
+        <div class="col-md-4 column">
+        </div>
+    </div>
+</div>
+<style scoped="scoped">
+    body{
+        background-color: #e3e3e5;
+    }
+    .fetched{
+        word-wrap: break-word;
+    }
+    .icon{
+        display: inline-block;
+        margin: 0 10px 0 10px;
+    }
+</style>
+<script>
+    function fetch(){
+        let url = $("#url").val();
+        if(url){
+            $("#pro").css("display", "block");
+            $("#showrs").empty();
+            $.ajax({
+                type: "POST",
+                url: "/fetch_video",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({url: url}),
+                success: function (data) {
+                    $("#pro").css("display", "none");
+                    if (data.medias) {
+                        let htmlok = false;
+                        let t = setInterval(function () {
+                            if (htmlok) {
+                                clearInterval(t);
+                                if (confirm("文件真实地址已经获取\n点击【确定】可自动下载；\n【取消】后点击链接也可下载")) {
+                                    download();
+                                }
+                            }
+                        }, 1000);
+
+                        if (!data.need_proxy) data.need_proxy = false;
+                        for (let lable in data.medias) {
+                            let media = data.medias[lable];
+                            let $showrs = $("#showrs");
+                            $showrs.append(
+                                "<div style='font-weight: bold;'>" +
+                                "group[" + lable + "]" +
+                                (media.m3u8 ? ("（m3u8:<a id='" + lable + "' href='" + media.m3u8 + "' target='_blank' need_proxy='" + data.need_proxy + "'>m3u8</a>）") : "") +
+                                "</div>"
+                            );
+                            let $div = $("<div class='" + lable + "'></div>");
+                            $showrs.append($div);
+                            if (media.mixed) {
+                                $div.append("<span>媒体地址&nbsp;&nbsp;&nbsp;&nbsp;</span>");
+                                for (let i = 0; i < media.mixed.length; i++) {
+                                    $div.append(
+                                        "<a href='" + media.mixed[i] + "' target='_blank' need_proxy='" + data.need_proxy + "'>" +
+                                        "<span class='fetched'>视频分段" + (i + 1) + "</span>" +
+                                        "</a>&nbsp;&nbsp;&nbsp;&nbsp;"
+                                    );
+                                }
+                            } else {
+                                $div.append("<span>媒体地址</span>");
+                                for (let i = 0; media.videos && i < media.videos.length; i++) {
+                                    $div.append(
+                                        "<a href='" + media.videos[i] + "' target='_blank' need_proxy='" + data.need_proxy + "'>" +
+                                        "<span class='fetched'>视频分段" + (i + 1) + "</span>" +
+                                        "</a>&nbsp;&nbsp;&nbsp;&nbsp;"
+                                    );
+                                }
+                                for (let i = 0; media.audios && i < media.audios.length; i++) {
+                                    $div.append(
+                                        "<a href='" + media.audios[i] + "' target='_blank' need_proxy='" + data.need_proxy + "'>" +
+                                        "<span class='fetched'>音频分段" + (i + 1) + "</span>" +
+                                        "</a>&nbsp;&nbsp;&nbsp;&nbsp;"
+                                    );
+                                }
+                            }
+                        }
+                        htmlok = true;
+                    }
+                }
+            }).error(function(xhr){
+                alert((xhr.statusText?xhr.statusText:"")+(xhr.responseText?(", "+xhr.responseText):""));
+                $("#pro").css("display", "none");
+            });
+        }
+    }
+
+    function download(){
+        let $divs = $("#showrs").children("div[class]");
+        if($divs){
+            $("#download").css("display", "block");
+            (async function(){
+                let base = $("#path").val()+"\\"+uuidv4();
+                for(let i=0; i<$divs.length; i++){
+                    let $div = $($divs[i]);
+                    let group = $div.attr("class");
+                    let folder = base+"_"+group;
+
+                    //判断是否有m3u8
+                    let $m3u8_a = $div.prev().find("#"+group);
+                    let $a = $m3u8_a.length>0?$m3u8_a:$div.find("a");
+                    let length = $m3u8_a?1:$a.length;
+
+                    let allsuc = true;
+                    let atleast = false;
+                    for(let m=0; m<length; m++){
+                        let $a_ = $($a[m]);
+                        let img = "/rs/images/wait.gif";
+                        let $img = $("<img src='"+img+"'/>");
+                        $a_.after($img);
+                        let err = void 0;
+                        try{
+                            let target = $a_.attr("href");
+                            let url = $m3u8_a.length>0?"/download_m3u8":"/download";
+                            let result = await ajaxPromise(url, folder, target, $a_.attr("need_proxy"));
+                            img = "/rs/images/syn.png";
+                            atleast = true;
+                        }catch(e){
+                            img = "/rs/images/delete.png";
+                            allsuc = false;
+                            err = e;
+                        }
+                        setTimeout(function(){
+                            $img.attr("src", img);
+                            $img.attr("title", err);
+                        }, 100);
+                    }
+
+                    let msg = allsuc
+                              ?"【"+group+"】下的文件已经下载到服务器："+folder+"\n\n是否继续下载？"
+                              :(atleast
+                                ?"【"+group+"】下的文件已经下载到服务器："+folder+"\n\n部分遇到错误\n\n是否继续下载？"
+                                :"【"+group+"】下载出现错误，是否继续下载？"
+                               );
+                    if(!confirm(msg)){
+                        break;
+                    }
+                }
+                $("#download").css("display", "none");
+            })();
+        }
+    }
+
+    function ajaxPromise(url, folder, target, needProxy){
+        return new Promise(function(rs,rj){
+            $.ajax({
+                url:url,
+                type:"POST",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({folder:folder, url:target, need_proxy:needProxy}),
+                timeout:3600000,
+                dataType:"json",
+                success:function(data){
+                    if(data.localpath) {
+                        return rs(data.localpath);
+                    }else if(data.err){
+                        return rj(data.err);
+                    }else{
+                        rj("未知错误");
+                    }
+                },
+                error:function(err){
+                    rj("["+err.status+"]"+err.responseText);
+                }
+            });
+        });
+    }
+</script>
+</body>
+</html>
