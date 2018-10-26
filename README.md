@@ -119,12 +119,14 @@ if the url is "http://v.youku.com/v_show/id_XMzg4NzMyMzU1Ng==.html?spm=a2hww.113
 the **domain** should be "**youku.com**".
 and the path looks like:
 
+```
 project
 &nbsp;&nbsp;|___routes
 &nbsp;&nbsp;&nbsp;&nbsp;|___crawler
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___youku.com
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___loginer.js
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___fecther.js
+```
 
 **2、 Fetcher & Loginer**
 
