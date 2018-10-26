@@ -11,7 +11,7 @@
         /*"data_dir":""*/
     },
     "usefilelog": false,
-    "datasource":"MYSQL",
+    /*"datasource":"MYSQL",*/
     "fetch_max_num":1,
     /*多进程模式*/
     /*"multi_process_count": 8 */
