@@ -121,11 +121,11 @@ and the path looks like:
 
 ```
 project
-&nbsp;&nbsp;|___routes
-&nbsp;&nbsp;&nbsp;&nbsp;|___crawler
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___youku.com
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___loginer.js
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|___fecther.js
+|___routes
+    |___crawler
+        |___youku.com
+            |___loginer.js
+            |___fecther.js
 ```
 
 **2、 Fetcher & Loginer**
