@@ -65,14 +65,14 @@ When you run as node , there are two optional args
         "home":"/Chrome",
         /*use Chrome's headless mode                   [Optional]*/
         "headless":false
-        /*Chrome's CDI port                            [Optional, default 3000]*/
+        /*Chrome's CDI port                            [Optional, default 9222]*/
         /*port:9222*/
         /*Chrome's data dir                            [Optional]*/
         /*"data_dir":""*/
     },
     /*use file to log infomation                       [Optional, default false]*/
     "usefilelog": false,
-    /*if present,use a datasource to manage tasks      [Optional, default 3000]*/
+    /*if present,use a datasource to manage tasks      [Optional, default MYSQL]*/
     /*"datasource":"MYSQL",*/
     /*if use datasource, use this to control task's concurrency      [Optional]*/
     "fetch_max_num":1,
