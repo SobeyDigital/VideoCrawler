@@ -22,7 +22,7 @@
     "mysql": "^2.15.0",
     "serve-favicon": "~2.3.2",
     "silly-datetime": "^0.1.2",
-    "superagent": "~3.5.2",
+    "superagent": "~3.7.0",
     "superagent-proxy": "^1.0.3",
     "uuid": "^3.2.1"
   },
